@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-dark text-white font-sans overflow-x-hidden;
+  }
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary;
+}
+
+.btn-primary {
+  @apply bg-brand-primary hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg shadow-brand-primary/20 hover:shadow-brand-primary/40 transform hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply border border-brand-gray/30 hover:border-brand-primary text-white font-semibold py-3 px-8 rounded-full transition-all duration-300;
+}
